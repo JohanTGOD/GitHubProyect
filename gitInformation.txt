@@ -1,4 +1,6 @@
+
 Que es Git y Github
+
 
 Creado por Linux tocbard
 
@@ -9,4 +11,5 @@ El comando para que nuestro repositorio sepa de la existencia de un archivo o su
 El comando para almacenar definitivamente todos los cambios que por ahora viven en el staging area es git commit. También podemos guardar un mensaje para recordar muy bien qué cambios hicimos en este commit con el argumento -m "Mensaje del commit".
 Por último, si queremos mandar nuestros commits a un servidor remoto, un lugar donde todos podamos conectar nuestros proyectos, usamos el comando git push
 
-¿Que son los arcivos binarios(word) y que sucede cuanto uno lo intenta abrir en un ide o block de notas?
+
+¿Que son los archivos binarios(word) y que sucede cuanto uno lo intenta abrir en un ide o block de notas?
