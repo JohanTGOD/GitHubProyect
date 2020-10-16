@@ -1,0 +1,2 @@
+¿Git show? Mostrara todos los cambios echos,quien los hizo, que lineas han cambiado
+¿Git log? git log <nombreDelArchivo> para ver la historia completa del archivo
