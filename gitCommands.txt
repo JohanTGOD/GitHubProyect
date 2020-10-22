@@ -1,3 +1,4 @@
-
-¿Git show? Mostrara todos los cambios echos,quien los hizo, que lineas han cambiado
-¿Git log? git log <nombreDelArchivo> para ver la historia completa del file
+¿git config --list? es para saber la configuracion de mi git
+¿git show? Mostrara todos los cambios echos,quien los hizo, que lineas han cambiado
+            por debajo esto realiza un git diff con los tags de los comits para poder ver los cambios
+¿git log? git log <nombreDelArchivo> para ver la historia completa del file
