@@ -1,4 +1,22 @@
 ¿git config --list? es para saber la configuracion de mi git
 ¿git show? Mostrara todos los cambios echos,quien los hizo, que lineas han cambiado
             por debajo esto realiza un git diff con los tags de los comits para poder ver los cambios
+            pero sin la informacion de el dia,el correo y de la persona quien la hizo
 ¿git log? git log <nombreDelArchivo> para ver la historia completa del file
+¿git mv? es super importante para cambiar el nombre o la ruta de files ya traqueados
+            git mv <oldName> <newName>
+                    por debajo lo que haria seria
+                        mv <oldname> <newname>
+                        git add newname
+                        git rm --cache oldname
+¿git diff?
+            Es util para comparar las versiones de lo commits o de los archivos
+            git diff jfhdsjkdf87f9s fsdjkfhjksdf899
+                los numero raros de arriba son los ids de los commits que lo puedo ver con git log
+
+            Aparte tiene una funcionalidad para poder identificar los cambios que se le realizen a un mismo archivo en diferentes etapas
+            es decir tengo un archiov llamado hola en stg pero le hago cambios a ese archivo por lo que ahora tengo entre commillas dos archivos
+            uno hola en stg y otro en el directori llamado hola
+            si hago un git diff
+                sin los ids de los commits 
+                podre ver los cambios que se le realizaron a ese archivo                            
