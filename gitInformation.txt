@@ -25,6 +25,7 @@ git init : Cuando digito este comando pasa lo siguiente
             Se crea en espacio la ram llamada staging y el repositorio
 
 git add: envio el archivo a a staging area(En este momento ya se vuelve un archivo trackeado)
+         Stagin es un area de preparacion antes de ir a  nuestro repositorio
     git rm --cached <file>
         Para sacar un archivo del stg area
 git commit: se envia al repositorio nombre por defecto es master
@@ -32,3 +33,5 @@ git commit: se envia al repositorio nombre por defecto es master
 CADA VEZ QUE HAGO UN COMMIT ES COMO SI GENERARA UNA NUEVA VERSION
 
 Ramas
+
+git checkout no solo sirve para cambiarme de ramas sino tambien para pasarme a un especifico commit
