@@ -27,4 +27,7 @@ Cuando se abre un arhivo en vim para salir hay que realizar:
 ¿git reset?
             Nos permite volver a una version anterio
                 hard: todo vuelve a la version anterior y borramos
+                    Tengo que tomar el id del comit al que quiero regresar
+                    Cuando haga esto los id que estuviera por delante se van a borrar de la base de datos de git
+                    git reset 4d5sa4d56a465fas --hard
                 soft: vuelve a la version anterior pero no borra lo que esta en el stagin area osea despues de hacer el git add .
