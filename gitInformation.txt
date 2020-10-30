@@ -13,7 +13,12 @@ Por último, si queremos mandar nuestros commits a un servidor remoto, un lugar 
 
 
 ¿Que son los archivos binarios(word) y que sucede cuanto uno lo intenta abrir en un ide o block de notas?
-
+comand ls -al   
+    ls significa listar
+        ls listar
+        - significa que van a ir unos argumnentos
+            a ver archivos ocultos
+            al significa traigame en una lista todos los archivos incluso los ocultos
 
 untracked = sin rastrear
 git init : Cuando digito este comando pasa lo siguiente
