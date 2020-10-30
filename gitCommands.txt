@@ -16,7 +16,7 @@ Cuando se abre un arhivo en vim para salir hay que realizar:
             Es util para comparar las versiones de lo commits o de los archivos
             git diff jfhdsjkdf87f9s fsdjkfhjksdf899
                 los numero raros de arriba son los ids de los commits que lo puedo ver con git log
-
+                El orden es colocar primero el ID viejo y Despues el ID nuevo
             Aparte tiene una funcionalidad para poder identificar los cambios que se le realizen a un mismo archivo en diferentes etapas
             es decir tengo un archiov llamado hola en stg pero le hago cambios a ese archivo por lo que ahora tengo entre commillas dos archivos
             uno hola en stg y otro en el directori llamado hola
