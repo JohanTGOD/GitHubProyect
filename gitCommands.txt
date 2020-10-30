@@ -1,3 +1,6 @@
+Cuando se abre un arhivo en vim para salir hay que realizar:
+    shif zz
+
 ¿git config --list? es para saber la configuracion de mi git
 ¿git show? Mostrara todos los cambios echos,quien los hizo, que lineas han cambiado
             por debajo esto realiza un git diff con los tags de los comits para poder ver los cambios
