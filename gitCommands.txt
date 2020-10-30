@@ -23,3 +23,8 @@ Cuando se abre un arhivo en vim para salir hay que realizar:
             si hago un git diff
                 sin los ids de los commits 
                 podre ver los cambios que se le realizaron a ese archivo                            
+
+¿git reset?
+            Nos permite volver a una version anterio
+                hard: todo vuelve a la version anterior y borramos
+                soft: vuelve a la version anterior pero no borra lo que esta en el stagin area osea despues de hacer el git add .
