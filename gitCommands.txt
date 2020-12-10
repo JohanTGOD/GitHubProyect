@@ -31,3 +31,5 @@ Cuando se abre un arhivo en vim para salir hay que realizar:
                     Cuando haga esto los id que estuviera por delante se van a borrar de la base de datos de git
                     git reset 4d5sa4d56a465fas --hard
                 soft: vuelve a la version anterior pero no borra lo que esta en el stagin area osea despues de hacer el git add .
+
+Testing ssh
