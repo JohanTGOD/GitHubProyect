@@ -38,3 +38,6 @@ head significa que es el commit mas actual
 Ramas
 
 git checkout no solo sirve para cambiarme de ramas sino tambien para pasarme a un especifico commit
+
+
+verifiying data
