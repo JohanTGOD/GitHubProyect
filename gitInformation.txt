@@ -32,6 +32,9 @@ git commit: se envia al repositorio nombre por defecto es master
 
 CADA VEZ QUE HAGO UN COMMIT ES COMO SI GENERARA UNA NUEVA VERSION
 
+
+head significa que es el commit mas actual
+
 Ramas
 
 git checkout no solo sirve para cambiarme de ramas sino tambien para pasarme a un especifico commit

@@ -32,4 +32,7 @@ Cuando se abre un arhivo en vim para salir hay que realizar:
                     git reset 4d5sa4d56a465fas --hard
                 soft: vuelve a la version anterior pero no borra lo que esta en el stagin area osea despues de hacer el git add .
 
-Testing ssh
+git fetch:
+    Actualiza lo que hay en repositorio local con lo que hay en el repositorio remoto, sin ver los cambios en el directorio
+
+git pull: Realiza un git fetch y un git merge para tener la informacion actualizada tanto en el directorio como el repositorio local
