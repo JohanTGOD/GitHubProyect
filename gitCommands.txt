@@ -36,3 +36,6 @@ git fetch:
     Actualiza lo que hay en repositorio local con lo que hay en el repositorio remoto, sin ver los cambios en el directorio
 
 git pull: Realiza un git fetch y un git merge para tener la informacion actualizada tanto en el directorio como el repositorio local
+
+
+git commit -am: Es util con archivos ya trackeados, si el archivo es nuevo lo recomendable es git add . y luego git commit
