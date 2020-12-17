@@ -39,3 +39,4 @@ git pull: Realiza un git fetch y un git merge para tener la informacion actualiz
 
 
 git commit -am: Es util con archivos ya trackeados, si el archivo es nuevo lo recomendable es git add . y luego git commit
+git remote -v: para ver la url del repositorio ya sea https o ssh

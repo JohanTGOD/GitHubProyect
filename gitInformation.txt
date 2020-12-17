@@ -37,7 +37,35 @@ head significa que es el commit mas actual
 
 Ramas
 
-git checkout no solo sirve para cambiarme de ramas sino tambien para pasarme a un especifico commit
+git checkout no solo sirve para cambiarme de ramas sino tambien para pasarme a un especifico commit,
+cuando me paso a un commit puedo hacer los cambios que quiera y puedo hasta comitearlos, pero no va a pasar nada
+hasta que ese commit lo convierta en una rama para despues poder mergearlo
+        git branch <new-branch-name> <commit ssh>
+
+git nunca borra nada ¿Enronces que pasa cuando hago un hard?
 
 
-verifiying data
+
+llaves publicas y llaves privadas = cifrado asimetrico de un solo camino
+    las llaves estan vinculadas matematicamente la una con la otra
+    lo que yo cifre con la llave publica solo lo abre la llave privada
+
+Esto se usa en git para evitar password cracking osea que me hackeen la informacion,es mucho mas seguro
+y evito estar colocando el usuario y la contraseña cada nada
+Cuando se crea un ssh con github yo envio mi llave publica a git, git cifra la llave publica de el con mi llave publica y me lo envia a mi
+    para tener una comuniacion segura
+
+la llaves shh no son por repositorio o por proyecto, son por persona
+el algoritmo rsa es el mas usado  4096 es la mas segura
+
+Cuando una carpeta empieza por punto significa que esta oculta
+    asi que para ir a carpetas ocultas se debe colocar cd .ssh
+        el punto indica que cambiame a un directorio oculto y bueno tambien todos los archivos ocultos tienen ese punto del inicio
+
+pst cd / funciona como un acceso rapido a las principales carpetas, no importa la ruta en la que estes te va a llevar rapido
+
+cd ~significa lleveme al home
+
+
+SIEMPRE CREAR UNA LLAVE SSH POR REPOSITORIO Y POR MAQUINA, ES MEJOR NUNCA ENVIAR LAS LLAVES
+SI CREE LA LLAVE SSH LA DEBO ASOCIAR A MI REPOSITORIO con el comando git remote set-url origin <url del repositorio>
