@@ -69,3 +69,20 @@ cd ~significa lleveme al home
 
 SIEMPRE CREAR UNA LLAVE SSH POR REPOSITORIO Y POR MAQUINA, ES MEJOR NUNCA ENVIAR LAS LLAVES
 SI CREE LA LLAVE SSH LA DEBO ASOCIAR A MI REPOSITORIO con el comando git remote set-url origin <url del repositorio>
+
+hay una forma de colocar alias a a los comandos de git, si ni estoy mal es una bondad de Linux
+pero debo de investigarla
+el comando seria:
+    cuidado con los espacios
+    alias <nombre>="<git command>"
+    alias seeStructure="git log --all --graph --decorate --oneline"
+
+
+Los archivos binarios no se deberian subir a repositoros como lo son las imagenes
+
+Normalmente se bloque la rama master para que no se pueda hacer un merge sin autorizacion
+
+Para crear una un readme.md hay una pagina llamada editor.md donde puedo generar
+algun diseño que me guste
+
+Hay algo llamado git pages que funciona como heroku

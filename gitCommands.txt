@@ -40,3 +40,39 @@ git pull: Realiza un git fetch y un git merge para tener la informacion actualiz
 
 git commit -am: Es util con archivos ya trackeados, si el archivo es nuevo lo recomendable es git add . y luego git commit
 git remote -v: para ver la url del repositorio ya sea https o ssh
+
+
+
+git log --all --graph --decorate --oneline = para ver de forma grafica el proceso del proyecto
+
+git tag -a v0.1 -m "<message>" <commit>
+para enviar el tag a Github se hace con el comando  
+    git push origin --tags
+
+gitk = will show something as sourcetree, it will work in git bash
+
+git fork: Funciona como un git clone, pero funciona mas que todo para realizar contribuciones
+            a un proyecto,puedo tener dos repositoros de github con el mismo proyecto.
+            A diferencia de tener un solo repositorio en github.
+            
+            para mantener actualizada el proyecto fork con el principal se podria realizar
+            una configuracion de fuente la cual llamaremos upstream asi como hay un 
+            origin
+
+            esta se agregara con el comando
+                git remote add upstream <url del proyecto>
+                        el upstream es el nombre que comumente se le da pero se puede cambiar
+
+            asi de esa manera para tener actualizado el proyecto fork con el proyecto principal
+            de github,en vez de colocar git pull origin master
+            para hacer referencia al proyecto principal de github
+            se le hara git pull upstream master 
+
+
+            Normalmente se actualizara haciendo pull de upstream pero se subiran tus cambios
+            a traves del origin para despues poder lanzar el PR
+
+git rebase
+        Es una mala practica usarlo en repositorio remotos, hazlo en repositorio local
+        Es como un merge pero lo que cambia es la historia de como se vieron afectados los cambios
+        Reescirbir la historia del repositorio               
