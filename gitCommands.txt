@@ -76,3 +76,10 @@ git rebase
         Es una mala practica usarlo en repositorio remotos, hazlo en repositorio local
         Es como un merge pero lo que cambia es la historia de como se vieron afectados los cambios
         Reescirbir la historia del repositorio               
+
+git stash 
+        Es util cuando deseo tener en temporal los cambios que hago a los archivos
+            ejemplo: estoy en la rama master, hice unos cambios, pero me necesito cambiar de rama o de commit,
+                        pero como aun no he terminado la idea que he modificado no deseo hacer un comit
+                        por lo que realizo un git stash para que guarde esos cambios temporalmente y despues continuar trabajando desde ese punto
+                        
