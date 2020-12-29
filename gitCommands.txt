@@ -97,3 +97,9 @@ git stash
     git checkout stash -b <Nombre de rama>
         para crear una rama con los cambios del ULTIMO STASH QUE PUSE y de una ves pasarme a esa rama                        
                         
+
+
+ git clean --dry-run
+ git clean -f
+    Esto es para eliminar los archivos que aun no se han traqueado
+    en el orden que coloque arriba
