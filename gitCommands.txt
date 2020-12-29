@@ -78,8 +78,22 @@ git rebase
         Reescirbir la historia del repositorio               
 
 git stash 
-        Es util cuando deseo tener en temporal los cambios que hago a los archivos
+        Es util cuando deseo tener en TEMPORAL los cambios que hago a los archivos
             ejemplo: estoy en la rama master, hice unos cambios, pero me necesito cambiar de rama o de commit,
                         pero como aun no he terminado la idea que he modificado no deseo hacer un comit
                         por lo que realizo un git stash para que guarde esos cambios temporalmente y despues continuar trabajando desde ese punto
+
+    git stash save <“mensaje">
+    git stash drop
+    git stash drop stash@{<num_stash>}
+        me elimina un stash en especifico
+
+    git stash clear
+        me borrar toda la lista del stash
+
+    git stash list
+        para ver las listas de stash que tengo
+
+    git checkout stash -b <Nombre de rama>
+        para crear una rama con los cambios del ULTIMO STASH QUE PUSE y de una ves pasarme a esa rama                        
                         
