@@ -103,3 +103,14 @@ git stash
  git clean -f
     Esto es para eliminar los archivos que aun no se han traqueado
     en el orden que coloque arriba
+
+    pst hay que tener cuidado con el git ignore porque puede que no limpie un archivo debido a esto
+
+
+git cherry-pick 
+    Es usado cuando me quiero traer un commit de una rama(b) a mi rama (a)
+    ojo solo el commit y no todos los cambios de la rama(b)
+    es una mala practica
+    Esto cambia la historia de git porque simula como si el cambio hubiera sido en la rama a cuando en verdad fue en la rama base
+    una de las cosas mas importantes de git es mantener su historia
+    
