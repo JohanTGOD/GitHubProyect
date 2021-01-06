@@ -114,3 +114,13 @@ git cherry-pick
     Esto cambia la historia de git porque simula como si el cambio hubiera sido en la rama a cuando en verdad fue en la rama base
     una de las cosas mas importantes de git es mantener su historia
     
+git commit --amend
+    Es utilizado cuando deseo modificar los cambios del ultimo commit 
+    amend significa remendar
+    en ves de enviar un commit con v2 de esa manera lo podre solucionar
+    Pasos:
+        Despues de generar el ultimo commit
+        genero nuevos cambios
+        HAGO GIT ADD SOBRE EL ARCHIVO MODIFICADO(No se puede git commit -am)
+        despues hago git amend
+        decido si cambio el mensaje o no    
