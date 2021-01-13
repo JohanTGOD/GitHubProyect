@@ -85,4 +85,7 @@ Normalmente se bloque la rama master para que no se pueda hacer un merge sin aut
 Para crear una un readme.md hay una pagina llamada editor.md donde puedo generar
 algun diseño que me guste
 
-Hay algo llamado git pages que funciona como heroku
+Hay algo llamado git pages que funciona como servicio de hosting como heroku
+    ingresas a traves de : pages.github.com
+
+

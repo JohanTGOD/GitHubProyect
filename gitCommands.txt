@@ -48,6 +48,8 @@ git log --all --graph --decorate --oneline = para ver de forma grafica el proces
 git tag -a v0.1 -m "<message>" <commit>
 para enviar el tag a Github se hace con el comando  
     git push origin --tags
+para borrarlo de forma localgit tag -d <nombre del tag>    
+para borrarlo en github git push origin :refs/tags/<nombre del tag>
 
 gitk = will show something as sourcetree, it will work in git bash
 
@@ -75,7 +77,14 @@ git fork: Funciona como un git clone, pero funciona mas que todo para realizar c
 git rebase
         Es una mala practica usarlo en repositorio remotos, hazlo en repositorio local
         Es como un merge pero lo que cambia es la historia de como se vieron afectados los cambios
-        Reescirbir la historia del repositorio               
+        Reescirbir la historia del repositorio
+        Un merge se hacer parandose en master y seleccionado la rama remota
+        Un rebase en la rama que salio de master se escribe rebase master
+         ejemplo
+            (Estando desde miRama) git rebase master
+                                   git rebase miRama  
+                Si, se lanzan dos comandos al mismo tiempo
+
 
 git stash 
         Es util cuando deseo tener en TEMPORAL los cambios que hago a los archivos
@@ -113,6 +122,7 @@ git cherry-pick
     es una mala practica
     Esto cambia la historia de git porque simula como si el cambio hubiera sido en la rama a cuando en verdad fue en la rama base
     una de las cosas mas importantes de git es mantener su historia
+     git cherry-pick <el hash del commit>
     
 git commit --amend
     Es utilizado cuando deseo modificar los cambios del ultimo commit 
@@ -124,3 +134,33 @@ git commit --amend
         HAGO GIT ADD SOBRE EL ARCHIVO MODIFICADO(No se puede git commit -am)
         despues hago git amend
         decido si cambio el mensaje o no    
+
+git reflog
+    Ayuda a ver absolutamente todos los commmits sin importar si hubo un reset hard
+    es un git log que muestra absolutamente todo
+    este es un salvavidas para realmente regresar a una version estable del codigo
+    o antes de que algo se dañara
+      con la informacion que me da el git reflog puedo hacer un git reset usando el <head{1}> que quiera y no el hash
+      es otra posibilidad
+
+
+Para buscar con git
+    git grep color -->use la palabra color
+    git grep la --> donde use la palabra la
+    git grep -n color–> en que lineas use la palabra color
+    git grep -n platzi --> en que lineas use la palabra platzi
+    git grep -c la --> cuantas veces use la palabra la
+    git grep -c paltzi --> cuantas veces use la palabra platzi
+    git grep -c “<p>”–> cuantas veces use la etiqueta <p>
+    git log-S “cabecera” --> cuantas veces use la palabra cabecera en
+    todos los commits.
+    grep–> para los archivos
+    log --> para los commits
+
+
+
+    Alias para todo git
+        git config --global alias.stats “shortlog -sn --all --no-merges”
+        git config --global alias.stats “log --all --graph --decorate --onelines”
+
+    git blame -c <archivo a revisar>
