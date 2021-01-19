@@ -89,3 +89,10 @@ Hay algo llamado git pages que funciona como servicio de hosting como heroku
     ingresas a traves de : pages.github.com
 
 
+git hooks
+    son eventos que se disparan despues de algun git command que se haya configurado
+    tienes que ir a la carpeta oculata de git, ir a hooks
+    crear tu archiv de tipo sh 
+    lo guardas con uno de los nombres que permite git(No es cualquiera que quieras)
+        debe ser uno especifico de los nombres de los hooks que provee git,revisar en web los nombres
+    darle permisos de ejecución con chmod+x <nombre del archivo>
